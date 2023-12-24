@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".EkleActivity">
+
+    <EditText
+        android:id="@+id/urunadiText"
+        android:layout_width="368dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="263dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="Ürün adı:"
+        android:inputType="text"
+        android:textColor="#FF5722"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/kategoriText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/kategoriText"
+        android:layout_width="368dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="99dp"
+        android:ems="10"
+        android:hint="Fiyat:"
+        android:inputType="text"
+        android:textColor="#FF5722"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urunadiText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="310dp"
+        android:layout_height="158dp"
+        android:background="#9A9A9A"
+        android:onClick="selectImageView"
+        app:layout_constraintBottom_toTopOf="@+id/urunadiText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/select" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="207dp"
+        android:onClick="sendClicked"
+        android:text="Ekle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kategoriText"
+        app:layout_constraintVertical_bias="0.361" />
+</androidx.constraintlayout.widget.ConstraintLayout>
